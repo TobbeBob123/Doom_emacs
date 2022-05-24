@@ -42,3 +42,9 @@ Her setter jeg Org settings
 #+begin_src emacs-lisp
 (setq org-directory "~/org/")
 #+end_src
+
+* Beacon
+En plugin for se for min cursor er til en hver tid. Note du må laste ned beacon via M-x og package-install. 
+#+begin_src emacs-lisp
+(beacon-mode 1)
+#+end_src
