@@ -6,7 +6,7 @@
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
-(setq user-full-name "Tobias Os"
+(setq user-full-name "Tobias Os Finsbøl"
       user-mail-address "tobias.finsbol@gmail.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
@@ -64,7 +64,6 @@
 ;; - `add-load-path!' for adding directories to the `load-path', relative to
 ;;   this file. Emacs searches the `load-path' when you load packages with
 ;;   `require' or `use-package'.
-(map! :map global-map "SPC t m" #'vterm)
 ;;
 ;;
 ;; To get information about any of these functions/macros, move the cursor over
