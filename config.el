@@ -9,15 +9,16 @@
 (setq user-full-name "Tobias Os Finsbøl"
       user-mail-address "tobias.finsbol@gmail.com")
 
-;; Doom exposes five (optional) variables for controlling fonts in Doom:
+;; Doom exposes five  *variables* for controlling fonts in Doom:
 ;;
-;; - `doom-font' -- the primary font to use
-;; - `doom-variable-pitch-font' -- a non-monospace font (where applicable)
-;; - `doom-big-font' -- used for `doom-big-font-mode'; use this for
-;;   presentations or streaming.
-;; - `doom-unicode-font' -- for unicode glyphs
-;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
-;;
+(setq doom-font (font-spec :family "Source Code Pro" :size 12)
+      doom-variable-pitch-font (font-spec :family "Source Code Pro" :size 12)
+      doom-big-font (font-spec :family "Source Code Pro" :size 24))
+(after! doom-themes
+  (setq doom-themes-enable-bold t
+        doom-themes-enable-italic t))
+(after! org
+  (setq org-hide-emphasis-markers t))
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
