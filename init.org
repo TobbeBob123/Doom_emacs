@@ -1,6 +1,16 @@
+#+title: Init.el
+#+AUTHOR: Tobias Os Finsbøl
+#+PROPERTY: header-args :tangle init.el
+
+* Keybinding
+#+begin_src emacs-lisp
 (global-set-key (kbd "C-c v") 'vterm)
 (global-set-key (kbd "C-c n") 'neotree)
+#+end_src
 
+* Tilegg i emacs
+Her setter jeg hva emacs skal støtte. Hvis jeg vil ha org mode, så må jeg finne den i denne lista og fjerne <;;>. Og reloade emacs med SPC h r r og så må jeg restarte emacs med SPC q r.
+#+begin_src emacs-lisp
 (doom! :input
        ;;bidi              ; (tfel ot) thgir etirw uoy gnipleh
        ;;chinese
@@ -178,3 +188,4 @@
        :config
        ;;literate
        (default +bindings +smartparens))
+#+end_src
