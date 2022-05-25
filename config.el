@@ -17,7 +17,7 @@
 
 (setq display-line-numbers-type t)
 
-(setq org-directory "~/org/")
+(setq org-directory "~/org/todo.org")
 
 (beacon-mode 1)
 
@@ -29,3 +29,18 @@
       :nv "C-c q" #'kill-emacs)
 
 (setq ispell-hunspell-add-multi-dic "nb, en")
+
+(use-package dashboard
+  :init
+  (setq dashboard-set-heading-icons t)
+  (setq dashboard-set-files-icons t)
+  (setq dashboard-banner-logo-title "\nKEYBINDINGS:\
+\nFind file               (SPC .)     \
+\nFind recent files       (SPC f r)   \
+Vterm                (C-c f v)\
+\nOpen file manager       (C-c d d)   \
+Org-agenda                (SPC o A)")
+  (setq dashboard-startup-banner "~/TobbeOS/Tobbeos.png")
+  (setq dashboard-center-content nil))
+:config
+(dashboard-setup-startup-hook)

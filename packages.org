@@ -8,4 +8,5 @@ Her installerer jeg pakker som ikke allerede står i init.el lista.
 (package! beacon)
 (package! ac-ispell)
 (package! flymake-aspell)
+(package! dashboard)
 #+end_src

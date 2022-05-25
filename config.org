@@ -40,7 +40,7 @@ Her aktiverer jeg linje nummer.
 * Org
 Her setter jeg Org settings
 #+begin_src emacs-lisp
-(setq org-directory "~/org/")
+(setq org-directory "~/org/todo.org")
 #+end_src
 
 * Beacon
@@ -64,4 +64,22 @@ Her setter jeg egendefinert keybindings.
 Her setter jeg språk emacs skal sjekke for feil.
 #+begin_src emacs-lisp
 (setq ispell-hunspell-add-multi-dic "nb, en")
+#+end_src
+
+* Dashboard
+#+begin_src emacs-lisp
+(use-package dashboard
+  :init
+  (setq dashboard-set-heading-icons t)
+  (setq dashboard-set-files-icons t)
+  (setq dashboard-banner-logo-title "\nKEYBINDINGS:\
+\nFind file               (SPC .)     \
+\nFind recent files       (SPC f r)   \
+Vterm                (C-c f v)\
+\nOpen file manager       (C-c d d)   \
+Org-agenda                (SPC o A)")
+  (setq dashboard-startup-banner "~/TobbeOS/Tobbeos.png")
+  (setq dashboard-center-content nil))
+:config
+(dashboard-setup-startup-hook)
 #+end_src
