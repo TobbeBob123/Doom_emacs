@@ -50,6 +50,7 @@ En plugin for se for min cursor er til en hver tid. Note du må laste ned beacon
 #+end_src
 
 * Keybindings
+Her setter jeg egendefinert keybindings.
 #+begin_src emacs-lisp
 (map! :nv "C-c v" #'vterm
       :nv "C-c n" #'neotree
@@ -58,6 +59,7 @@ En plugin for se for min cursor er til en hver tid. Note du må laste ned beacon
 #+end_src
 
 * Aspell
+Her setter jeg språk emacs skal sjekke for feil.
 #+begin_src emacs-lisp
 (setq ispell-hunspell-add-multi-dic "nb, en")
 #+end_src
