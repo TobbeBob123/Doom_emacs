@@ -26,4 +26,4 @@
       :nv "C-c b" #'buffer-menu
       :nv "C-c d d" #'dired-jump)
 
-(setq ispell-dictionary "nb")
+(setq ispell-hunspell-add-multi-dic "nb, en")
