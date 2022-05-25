@@ -1,6 +1,7 @@
 (global-set-key (kbd "C-c v") 'vterm)
 (global-set-key (kbd "C-c n") 'neotree)
 (global-set-key (kbd "C-c b") 'buffer-menu)
+(global-set-key (kbd "C-c d d") 'dired-jump)
 
 (doom! :input
        ;;bidi              ; (tfel ot) thgir etirw uoy gnipleh

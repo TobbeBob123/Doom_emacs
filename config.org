@@ -48,3 +48,4 @@ En plugin for se for min cursor er til en hver tid. Note du må laste ned beacon
 #+begin_src emacs-lisp
 (beacon-mode 1)
 #+end_src
+
