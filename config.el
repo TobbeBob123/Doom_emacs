@@ -17,7 +17,7 @@
 
 (setq display-line-numbers-type t)
 
-(setq org-directory "~/org/todo.org")
+(setq org-directory "~/org")
 
 (beacon-mode 1)
 
