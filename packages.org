@@ -3,7 +3,7 @@
 #+PROPERTY: header-args :tangle packages.el
 
 * Pakker
-Her installerer jeg pakker.
+Her installerer jeg pakker som ikke allerede står i init.el lista.
 #+begin_src emacs-lisp
 (package! beacon)
 (package! ac-ispell)

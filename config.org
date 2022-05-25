@@ -49,3 +49,15 @@ En plugin for se for min cursor er til en hver tid. Note du må laste ned beacon
 (beacon-mode 1)
 #+end_src
 
+* Keybindings
+#+begin_src emacs-lisp
+(map! :nv "C-c v" #'vterm
+      :nv "C-c n" #'neotree
+      :nv "C-c b" #'buffer-menu
+      :nv "C-c d d" #'dired-jump)
+#+end_src
+
+* Aspell
+#+begin_src emacs-lisp
+(setq ispell-dictionary "nb")
+#+end_src
