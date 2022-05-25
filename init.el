@@ -1,5 +1,6 @@
 (global-set-key (kbd "C-c v") 'vterm)
 (global-set-key (kbd "C-c n") 'neotree)
+(global-set-key (kbd "C-c b") 'buffer-menu)
 
 (doom! :input
        ;;bidi              ; (tfel ot) thgir etirw uoy gnipleh
@@ -68,7 +69,7 @@
 
        :checkers
        syntax              ; tasing you for every semicolon you forget
-       (spell +flyspell) ; tasing you for misspelling mispelling
+       ;;(spell +flyspell) ; tasing you for misspelling mispelling
        grammar           ; tasing grammar mistake every you make
 
        :tools

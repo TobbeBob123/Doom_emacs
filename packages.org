@@ -1,9 +1,11 @@
 #+title: Packages.el
 #+AUTHOR: Tobias Os Finsbøl
-#+PROPERTY: header-args :tangle package.el
+#+PROPERTY: header-args :tangle packages.el
 
 * Pakker
 Her installerer jeg pakker.
 #+begin_src emacs-lisp
 (package! beacon)
+(package! ac-ispell)
+(package! flymake-aspell)
 #+end_src

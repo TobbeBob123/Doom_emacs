@@ -6,6 +6,7 @@
 #+begin_src emacs-lisp
 (global-set-key (kbd "C-c v") 'vterm)
 (global-set-key (kbd "C-c n") 'neotree)
+(global-set-key (kbd "C-c b") 'buffer-menu)
 #+end_src
 
 * Tilegg i emacs
@@ -78,7 +79,7 @@ Her setter jeg hva emacs skal støtte. Hvis jeg vil ha org mode, så må jeg fin
 
        :checkers
        syntax              ; tasing you for every semicolon you forget
-       (spell +flyspell) ; tasing you for misspelling mispelling
+       ;;(spell +flyspell) ; tasing you for misspelling mispelling
        grammar           ; tasing grammar mistake every you make
 
        :tools
