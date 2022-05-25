@@ -24,6 +24,8 @@
 (map! :nv "C-c v" #'vterm
       :nv "C-c n" #'neotree
       :nv "C-c b" #'buffer-menu
-      :nv "C-c d d" #'dired-jump)
+      :nv "C-c d d" #'dired-jump
+      :nv "C-c f v" #'+vterm/here
+      :nv "C-c q" #'kill-emacs)
 
 (setq ispell-hunspell-add-multi-dic "nb, en")
