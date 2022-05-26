@@ -39,8 +39,9 @@
 \nFind recent files       (SPC f r)   \
 Vterm                (C-c f v)\
 \nOpen file manager       (C-c d d)   \
-Org-agenda                (SPC o A)")
+Org-agenda           (SPC o A)")
   (setq dashboard-startup-banner "~/TobbeOS/Tobbeos.png")
   (setq dashboard-center-content nil))
 :config
 (dashboard-setup-startup-hook)
+(setq doom-fallback-buffer "*dashboard*")
