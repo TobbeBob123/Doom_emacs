@@ -28,7 +28,7 @@
       :nv "C-c f v" #'+vterm/here
       :nv "C-c q" #'kill-emacs)
 
-(setq ispell-hunspell-add-multi-dic "nb, en")
+(setq ispell-hunspell-add-multi-dic "nb,en")
 
 (use-package dashboard
   :init
