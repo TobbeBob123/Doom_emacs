@@ -22,9 +22,10 @@
 (beacon-mode 1)
 
 (map! :nv "C-c v" #'vterm
-      :nv "C-c n" #'neotree
+      :nv "C-c n" #'treemacs
       :nv "C-c b" #'buffer-menu
-      :nv "C-c d d" #'dired-jump
+      :nv "C-c f d" #'dired-jump
+      :nv "C-c d" #'dired
       :nv "C-c f v" #'+vterm/here
       :nv "C-c q" #'kill-emacs)
 
@@ -36,10 +37,11 @@
   (setq dashboard-set-files-icons t)
   (setq dashboard-banner-logo-title "\nKEYBINDINGS:\
 \nFind file               (SPC .)     \
+Vterm                (C-c v)\
 \nFind recent files       (SPC f r)   \
-Vterm                (C-c f v)\
-\nOpen file manager       (C-c d d)   \
-Org-agenda           (SPC o A)")
+Vterm in fullscreen  (C-c f v)\
+\nFile manager fullscreen (C-c f d)   \
+File manager normal  (C-c d)")
   (setq dashboard-startup-banner "~/TobbeOS/Tobbeos.png")
   (setq dashboard-center-content nil))
 :config
