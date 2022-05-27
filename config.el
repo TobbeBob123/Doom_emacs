@@ -27,7 +27,9 @@
       :nv "C-c f d" #'dired-jump
       :nv "C-c d" #'dired
       :nv "C-c f v" #'+vterm/here
-      :nv "C-c q" #'kill-emacs)
+      :nv "C-c q" #'kill-emacs
+      :nv "C-c l" #'clipboard-yank
+      :nv "C-c c" #'clipboard-kill-ring-save)
 
 (setq ispell-hunspell-add-multi-dic "nb,en")
 
@@ -47,3 +49,5 @@ File manager normal  (C-c d)")
 :config
 (dashboard-setup-startup-hook)
 (setq doom-fallback-buffer "*dashboard*")
+
+(setq-default truncate-lines nil)

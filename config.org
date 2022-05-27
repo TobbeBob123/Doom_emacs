@@ -58,7 +58,9 @@ Her setter jeg egendefinert keybindings.
       :nv "C-c f d" #'dired-jump
       :nv "C-c d" #'dired
       :nv "C-c f v" #'+vterm/here
-      :nv "C-c q" #'kill-emacs)
+      :nv "C-c q" #'kill-emacs
+      :nv "C-c l" #'clipboard-yank
+      :nv "C-c c" #'clipboard-kill-ring-save)
 #+end_src
 
 * Aspell
@@ -85,4 +87,9 @@ File manager normal  (C-c d)")
 :config
 (dashboard-setup-startup-hook)
 (setq doom-fallback-buffer "*dashboard*")
+#+end_src
+
+* Break line
+#+begin_src emacs-lisp
+(setq-default truncate-lines nil)
 #+end_src
