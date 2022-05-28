@@ -40,7 +40,7 @@ Her aktiverer jeg linje nummer.
 * Org
 Her setter jeg Org settings
 #+begin_src emacs-lisp
-(setq org-directory "~/org")
+(setq org-directory "~/org/")
 #+end_src
 
 * Beacon
