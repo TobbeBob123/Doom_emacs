@@ -9,4 +9,5 @@ Her installerer jeg pakker som ikke allerede står i init.el lista.
 (package! ac-ispell)
 (package! flymake-aspell)
 (package! dashboard)
+(package! tldr)
 #+end_src

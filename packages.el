@@ -2,3 +2,4 @@
 (package! ac-ispell)
 (package! flymake-aspell)
 (package! dashboard)
+(package! tldr)

@@ -27,6 +27,7 @@
       :nv "C-c f d" #'dired-jump
       :nv "C-c d" #'dired
       :nv "C-c f v" #'+vterm/here
+      :nv "C-c t" #'tldr
       :nv "C-c q" #'kill-emacs
       :nv "C-c l" #'clipboard-yank
       :nv "C-c c" #'clipboard-kill-ring-save)
