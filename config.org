@@ -67,7 +67,7 @@ Her setter jeg egendefinert keybindings.
 * Aspell
 Her setter jeg språk emacs skal sjekke for feil.
 #+begin_src emacs-lisp
-(setq ispell-hunspell-add-multi-dic "nb,en")
+(setq ispell-hunspell-add-multi-dic "en,nb")
 #+end_src
 
 * Dashboard

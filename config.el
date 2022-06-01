@@ -32,7 +32,7 @@
       :nv "C-c l" #'clipboard-yank
       :nv "C-c c" #'clipboard-kill-ring-save)
 
-(setq ispell-hunspell-add-multi-dic "nb,en")
+(setq ispell-hunspell-add-multi-dic "en,nb")
 
 (use-package dashboard
   :init
