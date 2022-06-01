@@ -30,7 +30,8 @@
       :nv "C-c t" #'tldr
       :nv "C-c q" #'kill-emacs
       :nv "C-c l" #'clipboard-yank
-      :nv "C-c c" #'clipboard-kill-ring-save)
+      :nv "C-c c" #'clipboard-kill-ring-save
+      :nv "C-c k" #'calc)
 
 (setq ispell-hunspell-add-multi-dic "en,nb")
 
