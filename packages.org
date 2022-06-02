@@ -10,4 +10,5 @@ Her installerer jeg pakker som ikke allerede står i init.el lista.
 (package! flymake-aspell)
 (package! dashboard)
 (package! tldr)
+(package! autoinsert)
 #+end_src

@@ -3,3 +3,4 @@
 (package! flymake-aspell)
 (package! dashboard)
 (package! tldr)
+(package! autoinsert)
