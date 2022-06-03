@@ -33,7 +33,7 @@
       :nv "C-c c" #'clipboard-kill-ring-save
       :nv "C-c k" #'calc)
 
-(setq ispell-hunspell-add-multi-dic "en,nb")
+(setq ispell-hunspell-add-multi-dic "en_US,bokmål")
 
 (use-package dashboard
   :init
@@ -146,3 +146,7 @@ File manager normal  (C-c d)")
                                   ("\\chapter{%s}" . "\\chapter*{%s}")
                                   ("\\section{%s}" . "\\section*{%s}")
                                   ("\\subsection{%s}" . "\\subsection*{%s}")))
+
+(setq doom-modeline-icon t)
+(setq doom-modeline-major-mode-icon t)
+(setq doom-modeline-major-mode-color-icon t)

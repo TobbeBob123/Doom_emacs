@@ -11,4 +11,5 @@ Her installerer jeg pakker som ikke allerede står i init.el lista.
 (package! dashboard)
 (package! tldr)
 (package! autoinsert)
+(package! all-the-icons)
 #+end_src

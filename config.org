@@ -3,14 +3,13 @@
 #+PROPERTY: header-args :tangle config.el
 
 * AUTHOR
-Her setter jeg navnet jeg bruke når jeg tar #+AUTHOR og da vil emacs finne til riktig navn.
+Name on author
 #+begin_src emacs-lisp
 (setq user-full-name "Tobias Os Finsbøl"
       user-mail-address "tobias.finsbol@gmail.com")
 #+end_src
 
 * Fonts
-Her setter jeg fonter
 #+begin_src emacs-lisp
 (setq doom-font (font-spec :family "Source Code Pro" :size 12)
       doom-variable-pitch-font (font-spec :family "Source Code Pro" :size 12)
@@ -26,31 +25,30 @@ Her setter jeg fonter
 #+end_src
 
 * Themes
-Her setter jeg theme.
+theme.
 #+begin_src emacs-lisp 
 (setq doom-theme 'doom-dracula)
 #+end_src
 
 * Line nummer
-Her aktiverer jeg linje nummer.
 #+begin_src emacs-lisp
 (setq display-line-numbers-type t)
 #+end_src
 
 * Org
-Her setter jeg Org settings
+Sets Org settings
 #+begin_src emacs-lisp
 (setq org-directory "~/org/") 
 #+end_src
 
 * Beacon
-En plugin for se for min cursor er til en hver tid. Note du må laste ned beacon via M-x og package-install. 
+Don't lose your cursor. 
 #+begin_src emacs-lisp
 (beacon-mode 1)
 #+end_src
 
 * Keybindings
-Her setter jeg egendefinert keybindings.
+Sets keybindings.
 #+begin_src emacs-lisp
 (map! :nv "C-c v" #'vterm
       :nv "C-c n" #'treemacs
@@ -66,12 +64,13 @@ Her setter jeg egendefinert keybindings.
 #+end_src
 
 * Aspell
-Her setter jeg språk emacs skal sjekke for feil.
+Sets spell check to Norwegian and English
 #+begin_src emacs-lisp
-(setq ispell-hunspell-add-multi-dic "en,nb")
+(setq ispell-hunspell-add-multi-dic "en_US,bokmål")
 #+end_src
 
 * Dashboard
+TobbeOS dashboard
 #+begin_src emacs-lisp
 (use-package dashboard
   :init
@@ -96,11 +95,13 @@ File manager normal  (C-c d)")
 #+end_src
 
 * Break line
+Set line break
 #+begin_src emacs-lisp
 (setq-default truncate-lines nil)
 #+end_src
 
 * PDF
+Sets export support for emacs
 #+begin_src emacs-lisp
 (setq org-latex-pdf-process
       '("latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf -bibtex -f %f"))
@@ -190,4 +191,12 @@ File manager normal  (C-c d)")
                                   ("\\chapter{%s}" . "\\chapter*{%s}")
                                   ("\\section{%s}" . "\\section*{%s}")
                                   ("\\subsection{%s}" . "\\subsection*{%s}")))
+#+end_src
+
+* Modeline
+Set icons in the modeline
+#+begin_src emacs-lisp
+(setq doom-modeline-icon t)
+(setq doom-modeline-major-mode-icon t)
+(setq doom-modeline-major-mode-color-icon t)
 #+end_src
