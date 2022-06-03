@@ -33,7 +33,7 @@
       :nv "C-c c" #'clipboard-kill-ring-save
       :nv "C-c k" #'calc)
 
-(setq ispell-hunspell-add-multi-dic "en_US,bokmål")
+(setq ispell-change-dictionary "en_US")
 
 (use-package dashboard
   :init

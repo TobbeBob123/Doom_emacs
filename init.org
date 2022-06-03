@@ -72,7 +72,7 @@ Her setter jeg hva emacs skal støtte. Hvis jeg vil ha org mode, så må jeg fin
 
        :checkers
        syntax              ; tasing you for every semicolon you forget
-       (spell +aspell +flyspell) ; tasing you for misspelling mispelling
+       ;;(spell +aspell +flyspell) ; tasing you for misspelling mispelling
        grammar           ; tasing grammar mistake every you make
 
        :tools
