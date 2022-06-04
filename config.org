@@ -39,15 +39,12 @@ theme.
 Sets Org settings
 #+begin_src emacs-lisp
 (setq org-directory "~/org/")
-(define-skeleton my-org-tangle
-  "Template for org-mode"
-  "My config"
-  "#+author: Tobias Os Finsbøl" \n
-  "#+property: header-args :tangle")
+  (define-skeleton my-org-tangle
+    "Template for org-mode"
+    "My config"
+    "#+author: Tobias Os Finsbøl" \n
+    "#+property: header-args :tangle")
 #+end_src
-
-#+RESULTS:
-: my-org-tangle
 
 * Beacon
 Don't lose your cursor. 

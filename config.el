@@ -18,11 +18,11 @@
 (setq display-line-numbers-type t)
 
 (setq org-directory "~/org/")
-(define-skeleton my-org-tangle
-  "Template for org-mode"
-  "My config"
-  "#+author: Tobias Os Finsbøl" \n
-  "#+property: header-args :tangle")
+  (define-skeleton my-org-tangle
+    "Template for org-mode"
+    "My config"
+    "#+author: Tobias Os Finsbøl" \n
+    "#+property: header-args :tangle")
 
 (beacon-mode 1)
 
