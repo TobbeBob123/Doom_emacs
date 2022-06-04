@@ -18,6 +18,11 @@
 (setq display-line-numbers-type t)
 
 (setq org-directory "~/org/")
+(define-skeleton my-org-tangle
+  "Template for org-mode"
+  "My config"
+  "#+author: Tobias Os Finsbøl" \n
+  "#+property: header-args :tangle")
 
 (beacon-mode 1)
 
@@ -31,7 +36,8 @@
       :nv "C-c q" #'kill-emacs
       :nv "C-c l" #'clipboard-yank
       :nv "C-c c" #'clipboard-kill-ring-save
-      :nv "C-c k" #'calc)
+      :nv "C-c k" #'calc
+      :nv "C-c o" #'my-org-tangle)
 
 (setq ispell-change-dictionary "en_US")
 

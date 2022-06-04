@@ -180,6 +180,6 @@ Her setter jeg hva emacs skal støtte. Hvis jeg vil ha org mode, så må jeg fin
        ;;twitter           ; twitter client https://twitter.com/vnought
 
        :config
-       ;;literate
+       literate
        (default +bindings +smartparens))
 #+end_src
