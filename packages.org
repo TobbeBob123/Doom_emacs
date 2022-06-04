@@ -12,4 +12,5 @@ Her installerer jeg pakker som ikke allerede står i init.el lista.
 (package! tldr)
 (package! autoinsert)
 (package! all-the-icons)
+(package! keychain-environment)
 #+end_src

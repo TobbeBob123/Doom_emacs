@@ -5,3 +5,4 @@
 (package! tldr)
 (package! autoinsert)
 (package! all-the-icons)
+(package! keychain-environment)
