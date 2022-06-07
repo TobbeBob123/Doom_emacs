@@ -146,5 +146,3 @@ File manager normal  (C-c d)")
                                   ("\\chapter{%s}" . "\\chapter*{%s}")
                                   ("\\section{%s}" . "\\section*{%s}")
                                   ("\\subsection{%s}" . "\\subsection*{%s}")))
-
-(keychain-refresh-environment)

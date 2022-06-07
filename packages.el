@@ -4,4 +4,3 @@
 (package! dashboard)
 (package! tldr)
 (package! autoinsert)
-(package! keychain-environment)

@@ -191,8 +191,3 @@ File manager normal  (C-c d)")
                                   ("\\section{%s}" . "\\section*{%s}")
                                   ("\\subsection{%s}" . "\\subsection*{%s}")))
 #+end_src
-
-* SSH key
-#+begin_src emacs-lisp
-(keychain-refresh-environment)
-#+end_src
