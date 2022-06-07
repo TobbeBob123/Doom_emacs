@@ -191,3 +191,10 @@ File manager normal  (C-c d)")
                                   ("\\section{%s}" . "\\section*{%s}")
                                   ("\\subsection{%s}" . "\\subsection*{%s}")))
 #+end_src
+
+* SSH key
+#+begin_src emacs-lisp
+(require 'exec-path-from-shell
+(exec-path-from-shell-copy-env "SSH_AGENT_PID")
+(exec-path-from-shell-copy-env "SSH_AUTH_SOCK"))
+#+end_src
