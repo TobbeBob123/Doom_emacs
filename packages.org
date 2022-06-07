@@ -11,5 +11,5 @@ Her installerer jeg pakker som ikke allerede står i init.el lista.
 (package! dashboard)
 (package! tldr)
 (package! autoinsert)
-(package! exec-path-from-shell)
+(package! keychain-environment)
 #+end_src

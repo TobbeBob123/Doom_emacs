@@ -147,6 +147,4 @@ File manager normal  (C-c d)")
                                   ("\\section{%s}" . "\\section*{%s}")
                                   ("\\subsection{%s}" . "\\subsection*{%s}")))
 
-(require 'exec-path-from-shell
-(exec-path-from-shell-copy-env "SSH_AGENT_PID")
-(exec-path-from-shell-copy-env "SSH_AUTH_SOCK"))
+(keychain-refresh-environment)
