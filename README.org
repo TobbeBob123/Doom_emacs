@@ -1,6 +1,26 @@
 #+title: doom Emacs custom config
 #+author: Tobias Os Finsbøl
 
+* Content :toc:
+- *Config.el*
+  - [[#AUTHOR][AUTHOR]]
+  - [[#Fonts][Fonts]]
+  - [[#Themes][Themes]]
+  - [[#Line_numbers][Line numbers]]
+  - [[#Org][Org]]
+  - [[#Beacon][Beacon]]
+  - [[#Keybindings][Keybindings]]
+  - [[#Aspell][Aspell]]
+  - [[#Dashboard][Dashboard]]
+  - [[#Break_line][Break line]]
+  - [[#PDF][PDF]]
+
+- *Packages.el*
+  - [[#Pakker][Packages]]
+
+- *Init.el*
+  - [[#Tillegg_til_emacs][Tillegg til emacs]]
+    
 * AUTHOR
 Her setter jeg navnet jeg bruke når jeg tar #+AUTHOR og da vil emacs finne til riktig navn.
 #+begin_src emacs-lisp :tangle config.el
@@ -30,7 +50,7 @@ Her setter jeg theme.
 (setq doom-theme 'doom-dracula)
 #+end_src
 
-* Line nummer
+* Line_numbers
 Her aktiverer jeg linje nummer.
 #+begin_src emacs-lisp :tangle config.el
 (setq display-line-numbers-type t)
@@ -94,7 +114,7 @@ File manager normal  (C-c d)")
 (setq doom-fallback-buffer "*dashboard*")
 #+end_src
 
-* Break line
+* Break_line
 #+begin_src emacs-lisp :tangle config.el
 (setq-default truncate-lines nil)
 #+end_src
@@ -191,7 +211,7 @@ File manager normal  (C-c d)")
                                   ("\\subsection{%s}" . "\\subsection*{%s}")))
 #+end_src
 
-* Pakker i packages.el
+* Pakker
 Her installerer jeg pakker som ikke allerede står i init.el lista.
 #+begin_src emacs-lisp :tangle packages.el
 (package! beacon)
@@ -202,7 +222,7 @@ Her installerer jeg pakker som ikke allerede står i init.el lista.
 (package! autoinsert)
 #+end_src
 
-* Tillegg til emacs i Init.el
+* Tillegg_til_emacs
 Her setter jeg hva emacs skal støtte. Hvis jeg vil ha org mode, så må jeg finne den i denne lista og fjerne <;;>. Og reloade emacs med SPC h r r og så må jeg restarte emacs med SPC q r.
 #+begin_src emacs-lisp :tangle init.el
 (doom! :input
