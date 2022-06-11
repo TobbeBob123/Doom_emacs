@@ -46,7 +46,7 @@ Vterm                (C-c v)\
 Vterm in fullscreen  (C-c f v)\
 \nFile manager fullscreen (C-c f d)   \
 File manager normal  (C-c d)")
-  (setq dashboard-startup-banner "~/TobbeOS/Tobbeos.png")
+  (setq dashboard-startup-banner "~/TobbeOS/TobbeOSPNG/Tobbeos.png")
   (setq dashboard-center-content nil)
   (setq dashboard-items '((recents . 5)
                           (agenda . 5 )
