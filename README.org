@@ -2,7 +2,7 @@
 #+author: Tobias Os Finsbøl
 
 * Content :toc:
-- *Config.el*
+- [[#Config.el][Config.el]]
   - [[#AUTHOR][AUTHOR]]
   - [[#Fonts][Fonts]]
   - [[#Themes][Themes]]
@@ -15,20 +15,21 @@
   - [[#Break_line][Break line]]
   - [[#PDF][PDF]]
 
-- *Packages.el*
+- [[#Packages.el][Packages.el]]
   - [[#Pakker][Packages]]
 
-- *Init.el*
+- [[#Init.el][Init.el]]
   - [[#Tillegg_til_emacs][Tillegg til emacs]]
-    
-* AUTHOR
+
+* Config.el
+** AUTHOR
 Her setter jeg navnet jeg bruke når jeg tar #+AUTHOR og da vil emacs finne til riktig navn.
 #+begin_src emacs-lisp :tangle config.el
 (setq user-full-name "Tobias Os Finsbøl"
       user-mail-address "tobias.finsbol@gmail.com")
 #+end_src
 
-* Fonts
+** Fonts
 Her setter jeg fonter
 #+begin_src emacs-lisp :tangle config.el
 (setq doom-font (font-spec :family "Source Code Pro" :size 12)
@@ -44,31 +45,31 @@ Her setter jeg fonter
   '(font-lock-keyword-face :slant italic))
 #+end_src
 
-* Themes
+** Themes
 Her setter jeg theme.
 #+begin_src emacs-lisp :tangle config.el
 (setq doom-theme 'doom-dracula)
 #+end_src
 
-* Line_numbers
+** Line_numbers
 Her aktiverer jeg linje nummer.
 #+begin_src emacs-lisp :tangle config.el
 (setq display-line-numbers-type t)
 #+end_src
 
-* Org
+** Org
 Her setter jeg Org settings
 #+begin_src emacs-lisp :tangle config.el
 (setq org-directory "~/org/") 
 #+end_src
 
-* Beacon
+** Beacon
 En plugin for se for min cursor er til en hver tid. Note du må laste ned beacon via M-x og package-install. 
 #+begin_src emacs-lisp :tangle config.el
 (beacon-mode 1)
 #+end_src
 
-* Keybindings
+** Keybindings
 Her setter jeg egendefinert keybindings.
 #+begin_src emacs-lisp :tangle config.el
 (map! :nv "C-c v" #'vterm
@@ -84,13 +85,13 @@ Her setter jeg egendefinert keybindings.
       :nv "C-c k" #'calc)
 #+end_src
 
-* Aspell
+** Aspell
 Her setter jeg språk emacs skal sjekke for feil.
 #+begin_src emacs-lisp :tangle config.el
 (setq ispell-hunspell-add-multi-dic "en,nb")
 #+end_src
 
-* Dashboard
+** Dashboard
 #+begin_src emacs-lisp :tangle config.el
 (use-package dashboard
   :init
@@ -114,12 +115,12 @@ File manager normal  (C-c d)")
 (setq doom-fallback-buffer "*dashboard*")
 #+end_src
 
-* Break_line
+** Break_line
 #+begin_src emacs-lisp :tangle config.el
 (setq-default truncate-lines nil)
 #+end_src
 
-* PDF
+** PDF
 #+begin_src emacs-lisp :tangle config.el
 (setq org-latex-pdf-process
       '("latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf -bibtex -f %f"))
@@ -211,7 +212,8 @@ File manager normal  (C-c d)")
                                   ("\\subsection{%s}" . "\\subsection*{%s}")))
 #+end_src
 
-* Pakker
+* Packages.el
+** Pakker
 Her installerer jeg pakker som ikke allerede står i init.el lista.
 #+begin_src emacs-lisp :tangle packages.el
 (package! beacon)
@@ -222,7 +224,8 @@ Her installerer jeg pakker som ikke allerede står i init.el lista.
 (package! autoinsert)
 #+end_src
 
-* Tillegg_til_emacs
+* Init.el
+** Tillegg_til_emacs
 Her setter jeg hva emacs skal støtte. Hvis jeg vil ha org mode, så må jeg finne den i denne lista og fjerne <;;>. Og reloade emacs med SPC h r r og så må jeg restarte emacs med SPC q r.
 #+begin_src emacs-lisp :tangle init.el
 (doom! :input
