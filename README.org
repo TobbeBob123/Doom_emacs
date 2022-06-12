@@ -60,6 +60,11 @@ Her aktiverer jeg linje nummer.
 ** Org
 Her setter jeg Org settings
 #+begin_src emacs-lisp :tangle config.el
+(use-package org-auto-tangle
+  :defer t
+  :hook (org-mode . org-auto-tangle-mode)
+  :config
+  (setq org-auto-tangle-default t))
 (setq org-directory "~/org/") 
 #+end_src
 
@@ -235,6 +240,7 @@ Her installerer jeg pakker som ikke allerede står i init.el lista.
 (package! tldr)
 (package! autoinsert)
 (package! eww)
+(package! org-auto-tangle)
 #+end_src
 
 * Init.el

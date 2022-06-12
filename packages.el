@@ -5,3 +5,4 @@
 (package! tldr)
 (package! autoinsert)
 (package! eww)
+(package! org-auto-tangle)

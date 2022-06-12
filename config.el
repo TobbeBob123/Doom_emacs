@@ -17,6 +17,11 @@
 
 (setq display-line-numbers-type t)
 
+(use-package org-auto-tangle
+  :defer t
+  :hook (org-mode . org-auto-tangle-mode)
+  :config
+  (setq org-auto-tangle-default t))
 (setq org-directory "~/org/")
 
 (beacon-mode 1)
