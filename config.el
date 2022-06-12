@@ -56,7 +56,6 @@ File manager normal  (C-c d)")
 :config
 (dashboard-setup-startup-hook)
 (setq doom-fallback-buffer "*dashboard*")
-(setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
 
 (setq-default truncate-lines nil)
 
