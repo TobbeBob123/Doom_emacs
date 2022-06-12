@@ -396,7 +396,7 @@ Her setter jeg hva emacs skal støtte. Hvis jeg vil ha org mode, så må jeg fin
 
        :app
        ;;calendar
-       ;;emms
+       emms
        ;;everywhere        ; *leave* Emacs!? You must be joking
        ;;irc               ; how neckbeards socialize
        ;;(rss +org)        ; emacs as an RSS reader
