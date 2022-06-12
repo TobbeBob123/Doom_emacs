@@ -1,25 +1,25 @@
 #+title: doom Emacs custom config
 #+author: Tobias Os Finsbøl
+#+auto_tangle: t
 
 * Content :toc:
-- [[#Config.el][Config.el]]
-  - [[#AUTHOR][AUTHOR]]
-  - [[#Fonts][Fonts]]
-  - [[#Themes][Themes]]
-  - [[#Line_numbers][Line numbers]]
-  - [[#Org][Org]]
-  - [[#Beacon][Beacon]]
-  - [[#Keybindings][Keybindings]]
-  - [[#Aspell][Aspell]]
-  - [[#Dashboard][Dashboard]]
-  - [[#Break_line][Break line]]
-  - [[#PDF][PDF]]
-
-- [[#Packages.el][Packages.el]]
-  - [[#Pakker][Packages]]
-
-- [[#Init.el][Init.el]]
-  - [[#Tillegg_til_emacs][Tillegg til emacs]]
+- [[#configel][Config.el]]
+  - [[#author][AUTHOR]]
+  - [[#fonts][Fonts]]
+  - [[#themes][Themes]]
+  - [[#line_numbers][Line_numbers]]
+  - [[#org][Org]]
+  - [[#beacon][Beacon]]
+  - [[#keybindings][Keybindings]]
+  - [[#aspell][Aspell]]
+  - [[#dashboard][Dashboard]]
+  - [[#break_line][Break_line]]
+  - [[#pdf][PDF]]
+  - [[#eww][EWW]]
+- [[#packagesel][Packages.el]]
+  - [[#pakker][Pakker]]
+- [[#initel][Init.el]]
+  - [[#tillegg_til_emacs][Tillegg_til_emacs]]
 
 * Config.el
 ** AUTHOR
