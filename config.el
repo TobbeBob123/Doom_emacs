@@ -31,7 +31,8 @@
       :nv "C-c q" #'kill-emacs
       :nv "C-c l" #'clipboard-yank
       :nv "C-c c" #'clipboard-kill-ring-save
-      :nv "C-c k" #'calc)
+      :nv "C-c k" #'calc
+      :nv "C-c w" #'eww)
 
 (setq ispell-hunspell-add-multi-dic "en,nb")
 
@@ -55,6 +56,7 @@ File manager normal  (C-c d)")
 :config
 (dashboard-setup-startup-hook)
 (setq doom-fallback-buffer "*dashboard*")
+(setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
 
 (setq-default truncate-lines nil)
 
@@ -146,3 +148,11 @@ File manager normal  (C-c d)")
                                   ("\\chapter{%s}" . "\\chapter*{%s}")
                                   ("\\section{%s}" . "\\section*{%s}")
                                   ("\\subsection{%s}" . "\\subsection*{%s}")))
+
+(setq browse-url-browser-function 'eww-browse-url
+      shr-use-colors nil
+      shr-bullet "• "
+      shr-folding-mode t
+      eww-search-prefix "https://html.startpage.com/html?q="
+      url-privacy-level '(email agent cookies lastloc)
+      browse-url-secondary-browser-function 'browse-url-librewolf)

@@ -4,3 +4,4 @@
 (package! dashboard)
 (package! tldr)
 (package! autoinsert)
+(package! eww)

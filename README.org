@@ -82,7 +82,8 @@ Her setter jeg egendefinert keybindings.
       :nv "C-c q" #'kill-emacs
       :nv "C-c l" #'clipboard-yank
       :nv "C-c c" #'clipboard-kill-ring-save
-      :nv "C-c k" #'calc)
+      :nv "C-c k" #'calc
+      :nv "C-c w" #'eww)
 #+end_src
 
 ** Aspell
@@ -113,6 +114,7 @@ File manager normal  (C-c d)")
 :config
 (dashboard-setup-startup-hook)
 (setq doom-fallback-buffer "*dashboard*")
+(setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
 #+end_src
 
 ** Break_line
@@ -212,6 +214,17 @@ File manager normal  (C-c d)")
                                   ("\\subsection{%s}" . "\\subsection*{%s}")))
 #+end_src
 
+** EWW
+#+begin_src emacs-lisp :tangle config.el
+(setq browse-url-browser-function 'eww-browse-url
+      shr-use-colors nil
+      shr-bullet "• "
+      shr-folding-mode t
+      eww-search-prefix "https://html.startpage.com/html?q="
+      url-privacy-level '(email agent cookies lastloc)
+      browse-url-secondary-browser-function 'browse-url-librewolf)
+#+end_src
+
 * Packages.el
 ** Pakker
 Her installerer jeg pakker som ikke allerede står i init.el lista.
@@ -222,6 +235,7 @@ Her installerer jeg pakker som ikke allerede står i init.el lista.
 (package! dashboard)
 (package! tldr)
 (package! autoinsert)
+(package! eww)
 #+end_src
 
 * Init.el
@@ -396,7 +410,7 @@ Her setter jeg hva emacs skal støtte. Hvis jeg vil ha org mode, så må jeg fin
 
        :app
        ;;calendar
-       emms
+       ;;emms
        ;;everywhere        ; *leave* Emacs!? You must be joking
        ;;irc               ; how neckbeards socialize
        ;;(rss +org)        ; emacs as an RSS reader
