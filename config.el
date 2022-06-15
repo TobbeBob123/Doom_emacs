@@ -46,11 +46,11 @@
   (setq dashboard-set-heading-icons t)
   (setq dashboard-set-files-icons t)
   (setq dashboard-banner-logo-title "\nKEYBINDINGS:\
-\nFind file               (SPC .)     \
+\nFind file               (SPC .)    \
+Find recent files    (SPC f r)\
+\nVterm in fullscreen     (C-c f v)  \
 Vterm                (C-c v)\
-\nFind recent files       (SPC f r)   \
-Vterm in fullscreen  (C-c f v)\
-\nFile manager fullscreen (C-c f d)   \
+\nFile manager fullscreen (C-c f d)  \
 File manager normal  (C-c d)")
   (setq dashboard-startup-banner "~/TobbeOS/TobbeOSPNG/Tobbeos.png")
   (setq dashboard-center-content nil)
