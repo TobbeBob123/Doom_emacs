@@ -14,6 +14,7 @@
   - [[#aspell][Aspell]]
   - [[#dashboard][Dashboard]]
   - [[#break_line][Break_line]]
+  - [[#vterm-shell][VTerm shell]]
   - [[#pdf][PDF]]
   - [[#eww][EWW]]
   - [[#shell][Shell]]
@@ -125,6 +126,11 @@ File manager normal  (C-c d)")
 ** Break_line
 #+begin_src emacs-lisp :tangle config.el
 (setq-default truncate-lines nil)
+#+end_src
+
+** VTerm shell
+#+begin_src emacs-lisp :tangle config.el
+(setq shell-file-name "/bin/fish")
 #+end_src
 
 ** PDF

@@ -64,6 +64,8 @@ File manager normal  (C-c d)")
 
 (setq-default truncate-lines nil)
 
+(setq shell-file-name "/bin/fish")
+
 (setq org-latex-pdf-process
       '("latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf -bibtex -f %f"))
 
