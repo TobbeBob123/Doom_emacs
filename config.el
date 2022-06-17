@@ -37,7 +37,8 @@
       :nv "C-c l" #'clipboard-yank
       :nv "C-c c" #'clipboard-kill-ring-save
       :nv "C-c k" #'calc
-      :nv "C-c w" #'eww)
+      :nv "C-c w" #'eww
+      :nv "C-c m" #'bookmark-save)
 
 (setq ispell-hunspell-add-multi-dic "en,nb")
 

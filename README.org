@@ -90,7 +90,8 @@ Her setter jeg egendefinert keybindings.
       :nv "C-c l" #'clipboard-yank
       :nv "C-c c" #'clipboard-kill-ring-save
       :nv "C-c k" #'calc
-      :nv "C-c w" #'eww)
+      :nv "C-c w" #'eww
+      :nv "C-c m" #'bookmark-save)
 #+end_src
 
 ** Aspell
