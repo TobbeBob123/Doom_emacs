@@ -53,7 +53,7 @@ Find recent files    (SPC f r)\
 Vterm                (C-c v)\
 \nFile manager fullscreen (C-c f d)  \
 File manager normal  (C-c d)")
-  (setq dashboard-startup-banner "~/tobbeos/TobbeOSPNG/Tobbeos.png")
+  (setq dashboard-startup-banner "~/Bakgrunner/Tobbeos.png")
   (setq dashboard-center-content nil)
   (setq dashboard-items '((recents . 5)
                           (agenda . 5 )
