@@ -1,6 +1,3 @@
-(setq user-full-name "Tobias Os Finsbøl"
-      user-mail-address "tobias.finsbol@gmail.com")
-
 (setq doom-font (font-spec :family "Source Code Pro" :size 12)
       doom-variable-pitch-font (font-spec :family "Source Code Pro" :size 12)
       doom-big-font (font-spec :family "Source Code Pro" :size 24))
