@@ -4,7 +4,6 @@
 
 * Content :toc:
 - [[#configel][Config.el]]
-  - [[#author][AUTHOR]]
   - [[#fonts][Fonts]]
   - [[#themes][Themes]]
   - [[#line_numbers][Line_numbers]]
@@ -24,13 +23,6 @@
   - [[#tillegg_til_emacs][Tillegg_til_emacs]]
 
 * Config.el
-** AUTHOR
-Her setter jeg navnet jeg bruke når jeg tar #+AUTHOR og da vil emacs finne til riktig navn.
-#+begin_src emacs-lisp :tangle config.el
-(setq user-full-name "Tobias Os Finsbøl"
-      user-mail-address "tobias.finsbol@gmail.com")
-#+end_src
-
 ** Fonts
 Her setter jeg fonter
 #+begin_src emacs-lisp :tangle config.el
